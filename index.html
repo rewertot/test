@@ -1,79 +1,116 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>♫↔•</title> 
-</head> 
+<!DOCTYPE html>                                                                                                                                                         
+<html>                                                                                                                                                         
+<head>
+    <link rel="icon" href="images/да.png">                                                                                                                                                         
+    <title>♫↔•</title>                                                                                                                                                         
+</head>                                                                                                                                                         
 <style>
-    body{background-color: antiquewhite;}
-    h3, h5{color: deeppink;}
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    .top-cloud{position: absolute;right: 300px;top: 40px;}
+    .bottom-cloud{position: absolute;left: 250px;bottom: 300px;}
+    .top-container{background-color: rgb(248, 228, 228);position: relative;padding-top: 10px;}    
+    .mountain{position:relative; left:30%}                                                                                                                                                    
+    body{background-color: antiquewhite;
+    color: darkslategray;margin: 0;font-family: 'Pacifico', cursive;}                                                                                                                                                        
+    h3, h5{color: deeppink;}                                                                                                                                                        
     p, li{color: hotpink;}
-    hr{border-style: none;border-top-style: dotted;border-color: hotpink;border-width: 10px;width: 60%;}
-    p{border: 5px  lightpink;
-      border-style: none;border-top-style: hidden;border-left-style: hidden;border-right-style:dashed;}
-    table{border: 5px rgb(255, 0, 212) ;border-style: double;}
-    td,th{color: hotpink;width:100mm;}
-    th{background-color: violet;border-style: none;}
-
-</style>
-<body> 
-    <table> 
-        <tr> 
-            <td><img src="https://w7.pngwing.com/pngs/784/483/png-transparent-anime-fullmetal-alchemist-girl-face-game-child-face.png" 
-                    width="150" height="150"></td> 
-            <td> 
-                <h5>Aфанасьев ДА</h5> 
-                <p><em>школьник,<a href = "http://borschool9.ru/">9 школа</a></em></p> 
-                <p>Я незнаю что писать.</p> 
-            </td> 
-        </tr> 
-    </table> 
-    <hr>
-    <h3>последние 5 книг которые я прочитал</h3> 
-    <ul> 
-        <li>учебник истории за 7 класс</li> 
-        <li>Старуха Изергиль</li> 
-        <li>больше книг я не помню</li> 
-    </ul>
-    <hr> 
-    <h3>топ 5 любимых игр</h3> 
-    <ol> 
-        <li>Minecraft</li> 
-        <li>fortnite</li> 
-        <li>geometry dash</li> 
-        <li>fancade</li> 
-        <li>genshin impact</li> 
-    </ol>
     
-    <table>
-        <tr><th>предметы</th><th>оценки</th></tr>
+    h1{color: rgb(222, 183, 158);font-size: 5.625em;}  
+    h2{color: rgb(224, 193, 154);font-size: 50px;}                                                                                                                                                     
+    hr{border-style: none;border-top-style: dotted;border-color: hotpink;border-width: 10px;width: 60%;}                                                                                                                                                        
+    p{border: 5px  lightpink;                                                                                                                                                        
+      border-style: none;border-top-style: hidden;border-left-style: hidden;border-right-style:dashed;}                                                                                                                                                        
+    table{border: 5px rgb(255, 0, 212) ;border-style: double;}                                                                                                                                                        
+    td,th{color: hotpink;width:100mm;}                                                                                                                                                        
+    th{background-color: violet;border-style: none;}                                                                                                                                                        
+    .title-text{text-align: center;font-family: 'Caveat', cursive;}  
+    .table1{color: ivory;font-family:'Amatic SC', cursive; width:100% ;font-size: 30px;text-align: center; border-spacing: 0px; border-collapse: collapse;}                                                                                                                                                      
+    .a{background-color: aliceblue;} 
+    .c{background-color: aqua;}  
+    .t{position:relative; left: 100px;}                                                                                                                                              
+</style>                                                                                                                                                        
+<body> 
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="">
+        <div class="title-text">
+            <h1>ДА</h1>
+            <h2>Я <span class="pro">школьник</span></h2>
+        </div>
+        <img class="bottom-cloud" src="images/cloud.png" alt="">
+        <img class="mountain" src="images/mountain.png" alt="">
+    </div>                                                                                                                                                        
+    <table>                                                                                                                                                         
+        <tr>                                                                                                                                                         
+            <td><img src="https://w7.pngwing.com/pngs/784/483/png-transparent-anime-fullmetal-alchemist-girl-face-game-child-face.png"                                                                                                                                                         
+                    width="150" height="150"></td>                                                                                                                                                         
+            <td>                                                                                                                                                         
+                <h5>Aфанасьев ДА</h5>                                                                                                                                                         
+                <p><em>школьник,<a href = "http://borschool9.ru/">9 школа</a></em></p>                                                                                                                                                         
+                <p>Я незнаю что писать.</p>                                                                                                                                                         
+            </td>                                                                                                                                                         
+        </tr>                                                                                                                                                         
+    </table>                                                                                                                                                         
+    <hr>                                                                                                                                                        
+    <h3 class="t">последние 5 книг которые я прочитал</h3>                                                                                                                                                         
+    <ul class="t">                                                                                                                                                         
+        <li>учебник истории за 7 класс</li>                                                                                                                                                         
+        <li>Старуха Изергиль</li>                                                                                                                                                         
+        <li>больше книг я не помню</li>                                                                                                                                                         
+    </ul>                                                                                                                                                        
+    <hr>                                                                                                                                                         
+    <h3 class="t">топ 5 любимых игр</h3>                                                                                                                                                         
+    <ol class="t">                                                                                                                                                         
+        <li>Minecraft</li>                                                                                                                                                         
+        <li>fortnite</li>                                                                                                                                                         
+        <li>geometry dash</li>                                                                                                                                                         
+        <li>fancade</li>                                                                                                                                                         
+        <li>genshin impact</li>                                                                                                                                                         
+    </ol>                                                                                                                                                        
+                                                                                                                                                            
+    <table class="table1">                                                                                                                                                        
+        <tr><th>предметы</th><th>оценки</th></tr>                                                                                                                                                        
         
-        <tr>
-            <td>-+/*</td>
+        <tr class="a">
+            <td >-+/*</td>
             <td>•••••</td>
-        <tr>
+        </tr>
+        <tr class="c">
             <td>↔</td>
             <td>••••</td> 
         </tr>
             
-        </tr>
-        <tr>
+        
+        <tr class="a">
             <td>♫</td>
             <td>••••</td>
-        <tr>
+        </tr>
+        <tr class="c">
             <td>E=</td>
             <td>•••</td>
         </tr>
             
-        </tr>
-        <tr>
+        
+        <tr class="a">
             <td>я</td>
             <td>••••</td>
-        <tr>
+        </tr>
+        <tr class="c">
             <td>|^-^^|</td>
             <td>••••</td>
         </tr>
             
-        </tr>
+        
     </table> 
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="">
+        <div class="title-text">
+            <h1>ДА</h1>
+            <h2>Я <span class="pro">школьник</span></h2>
+        </div>
+        <img class="bottom-cloud" src="images/cloud.png" alt="">
+        <img class="mountain" src="images/mountain.png" alt="">
+    </div>           
 </body> 
 </html> 
