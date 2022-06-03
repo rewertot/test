@@ -9,7 +9,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     .top-cloud{position: absolute;right: 300px;top: 40px;}
+    .top-cloud:hover{position: absolute;right: 270px;top: 50px; transition: 1s;}
     .bottom-cloud{position: absolute;left: 250px;bottom: 300px;}
+    .bottom-cloud:hover{position: absolute;left: 240px;bottom: 330px; transition: 1s;}
     .top-container{background-color: rgb(248, 228, 228);position: relative;padding-top: 10px;}    
     .mountain{position:relative; left:30%}                                                                                                                                                    
     body{background-color: antiquewhite;
@@ -29,7 +31,81 @@
     .table1{color: ivory;font-family:'Amatic SC', cursive; width:100% ;font-size: 30px;text-align: center; border-spacing: 0px; border-collapse: collapse;}                                                                                                                                                      
     .a{background-color: aliceblue;} 
     .c{background-color: aqua;}  
-    .t{position:relative; left: 100px;}                                                                                                                                              
+    .t{position:relative; left: 100px;}  
+    .middle-container{
+        margin: 100px 0;
+        text-align: center;
+    }      
+    .intro{width: 30%; margin: auto;}  
+    .skills{padding-left: 100px;}  
+    .code-img{ width: 25%;float: left;margin: 30px;}
+    .chilli-img{width: 15%;float:right;margin-left: 30px;}   
+    a:active{color: red;}  
+    .sds{width: 100px; height: 100px;text-decoration:none; text-align:center; 
+  
+ border:groove 13px #f02b6d; 
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px; 
+ border-radius: 50px; 
+ font:10px "Courier New", Courier, monospace; 
+ font-weight:bold; 
+ color:#ff0000; 
+ background-color:#ed8787; 
+ background-image: -moz-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -webkit-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -o-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -ms-linear-gradient(top, #ed8787 0% ,#a5195a 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5195a', endColorstr='#a5195a',GradientType=0 ); 
+ background-image: linear-gradient(top, #ed8787 0% ,#a5195a 100%);   
+ -webkit-box-shadow:12px 13px 8px #b328bd, inset 8px 7px 8px #b80059; 
+ -moz-box-shadow: 12px 13px 8px #b328bd,  inset 8px 7px 8px #b80059;  
+ box-shadow:12px 13px 8px #b328bd, inset 8px 7px 8px #b80059;  
+  
+ text-shadow: -8px 6px 3px #000000; 
+ filter: dropshadow(color=#000000, offx=-8, offy=6);  -webkit-transition: height 0.03s ease-in-out;
+ -moz-transition:  height 0.03s ease-in-out;
+ -o-transition:  height 0.03s ease-in-out;
+ transition:  height 0.03s ease-in-out;}.button:hover{
+ padding:11px 43px; 
+ border:solid 13px #ff0000; 
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px; 
+ border-radius: 50px; 
+ font:50px "Courier New", Courier, monospace; 
+ font-weight:bold; 
+ color:#ff0000; 
+ background:#ff0000; 
+ -webkit-box-shadow:12px 13px 8px #ff0000, inset 0px 0px 1px #ff0000; 
+ -moz-box-shadow: 12px 13px 8px #ff0000,  inset 0px 0px 1px #ff0000;  
+ box-shadow:12px 13px 8px #ff0000, inset 0px 0px 1px #ff0000;  
+ opacity:0.26; 
+ -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=26); 
+ filter: alpha(opacity=26); 
+ text-shadow: 0px 14px 0px #ff0000; 
+ filter: dropshadow(color=#ff0000, offx=0, offy=14);}.button:active{
+ padding:11px 43px; 
+ border:groove 13px #f02b6d; 
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px; 
+ border-radius: 50px; 
+ font:50px "Courier New", Courier, monospace; 
+ font-weight:bold; 
+ color:#ff0000; 
+ background-color:#ed8787; 
+ background-image: -moz-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -webkit-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -o-linear-gradient(top, #ed8787 0%, #a5195a 100%); 
+ background-image: -ms-linear-gradient(top, #ed8787 0% ,#a5195a 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5195a', endColorstr='#a5195a',GradientType=0 ); 
+ background-image: linear-gradient(top, #ed8787 0% ,#a5195a 100%);   
+ -webkit-box-shadow:12px 13px 8px #b328bd, inset 8px 7px 8px #b80059; 
+ -moz-box-shadow: 12px 13px 8px #b328bd,  inset 8px 7px 8px #b80059;  
+ box-shadow:12px 13px 8px #b328bd, inset 8px 7px 8px #b80059;  
+ opacity:0.06; 
+ -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=6); 
+ filter: alpha(opacity=6); 
+ text-shadow: -8px 6px 3px #000000; 
+ filter: dropshadow(color=#000000, offx=-8, offy=6);}                                                                                                                             
 </style>                                                                                                                                                        
 <body> 
     <div class="top-container">
@@ -40,7 +116,18 @@
         </div>
         <img class="bottom-cloud" src="images/cloud.png" alt="">
         <img class="mountain" src="images/mountain.png" alt="">
-    </div>                                                                                                                                                        
+    </div> 
+    <div class="middle-container"><div class="profile">
+        <img width="600px" src="https://w7.pngwing.com/pngs/784/483/png-transparent-anime-fullmetal-alchemist-girl-face-game-child-face.png" alt="">
+        <h2>Aфанасьев ДА</h2> 
+        <p class="intro"><em>школьник,<a href = "http://borschool9.ru/">9 школа</a></em></p>
+        <button  class="sds"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">кнопка которая должна что то делать но мне лень</a></button>
+    </div></div>
+    <hr><div class="skills"><h2>Что я умею?</h2><div class="skill-row"><img class="code-img" width="100px" src="https://thumbs.gfycat.com/IdealFantasticBlacklab-size_restricted.gif" alt=""><h3>я умею играть в телефон</h3><p>мне это нравится потому что</p></div>
+    <div class="skill-row"><img class="chilli-img" width="100px" src="images/chillies.png" alt="chillies-img"> <h3>я умею бегать</h3><p>мне это нравится потому что я люблю скорость</p></div>
+</div>   
+<br>
+<br>                                                                                                                                                    
     <table>                                                                                                                                                         
         <tr>                                                                                                                                                         
             <td><img src="https://w7.pngwing.com/pngs/784/483/png-transparent-anime-fullmetal-alchemist-girl-face-game-child-face.png"                                                                                                                                                         
