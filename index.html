@@ -21,11 +21,11 @@
     .mountain{position:relative; left:30%;transition: 1s;}
     .mountain:hover{padding-top: 100px;padding-left:50px;transition: 1s;}                                                                                                                                                   
     body{background-color: antiquewhite;
-    color: darkslategray;margin: 0;font-family: 'Pacifico', cursive; width: 100%;}                                                                                                                                                        
+    color: darkslategray;margin: 0;font-family: 'Pacifico', cursive; width: 100%; overflow-x: hidden;}                                                                                                                                                        
     h3, h5{color:salmon;}                                                                                                                                                        
     p, li{color: hotpink;}
-    .img{position: relative;transition: 1s;}
-    .img:hover{position:relative;padding-left: 100px;transition: 1s;}
+    .images{position: relative;transition: 1s;}
+    .images:hover{position:relative;padding-left: 100px;transition: 1s;}
     
     h1{color: rgb(222, 183, 158);font-size: 5.625em;}  
     h2{color: rgb(224, 193, 154);font-size: 50px;}                                                                                                                                                     
@@ -45,11 +45,12 @@
         text-align: center;
     }      
     .intro{width: 30%; margin: auto;}  
-    .skills{padding-left: 100px;}  
-    .code-img{ width: 25%;float: left;margin: 30px;}
-    .chilli-img{width: 5%;float:right;padding-right: 50px;}   
+    .skills{padding-left: 100px; width: 100%; height: 300px;}  
+    .code-img{ width: 300px;float: left;margin: 30px;}
+    .chilli-img{width: 100px;float:right;padding-right: 200px;}   
     a:active{color: red;}  
     .sds{width: 100px; height: 100px;text-decoration:none; text-align:center; 
+    
   
  border:groove 13px #f02b6d; 
  -webkit-border-radius:50px;
@@ -69,7 +70,19 @@
  -moz-box-shadow: 12px 13px 8px #b328bd,  inset 8px 7px 8px #b80059;  
  box-shadow:12px 13px 8px #b328bd, inset 8px 7px 8px #b80059;  
   
- }                                                                                                                             
+ }   
+ .ul{padding: 15px;margin: 0 auto;list-style: none; overflow-y: none; box-sizing: border-box; display: grid; grid-template-columns: repeat(10,1fr);grid-auto-rows: 200px;grid-gap: 10px;grid-auto-flow:dense ;} 
+ li:nth-child(6n+1){grid-column-end: span 2; grid-row-end: span 2;}
+ li:nth-child(3n +1){grid-column-end: span 2}
+ li:nth-child(9n){grid-row-end: span 2;}  
+ .img{width: 100%;height: 100%;object-fit: cover;border: 1px solid rgba(0, 0, 0, 0.1);padding: 4px;background-color: white;}   
+ .d{text-align: center; padding: 45px 25px;background: #fedaec;cursor: pointer;margin-bottom: 30px;transition: all 0.4s ease 0s;} 
+ .d h1{margin-bottom: 35px;}  
+ .d h3{font-size: 20px;margin-bottom: 20px;text-transform: uppercase;}
+ .d h5{margin-bottom: 0px;}
+ .d:hover{box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);background: rgb(255, 154, 228);}  
+ .p{width: 100%; display: flex;flex-direction: row;justify-content: center;} 
+ .k{text-align: center;}                                                                                                              
 </style>                                                                                                                                                        
 <body> 
     <div class="top-container">
@@ -82,14 +95,47 @@
         <img class="mountain" src="images/mountain.png" alt="">
     </div> 
     <div class="middle-container"><div class="profile">
-        <img class="img" width="300px" src="https://avatanplus.com/files/resources/original/5c00f2aac77cc16763b3eb41.png" alt="">
+        <img class="images" width="300px" src="https://avatanplus.com/files/resources/original/5c00f2aac77cc16763b3eb41.png" alt="">
         <h2>Aфанасьев ДА</h2> 
         <p class="intro"><em>школьник,<a href = "http://borschool9.ru/">9 школа</a></em></p>
         <button  class="sds"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">кнопка которая должна что то делать но мне лень</a></button>
     </div></div>
-    <hr><div class="skills"><h2>Что я умею?</h2><div class="skill-row"><img class="code-img" width="100px" src="https://thumbs.gfycat.com/IdealFantasticBlacklab-size_restricted.gif" alt=""><h3>я умею играть в телефон</h3><p>мне это нравится потому что</p></div>
+    <hr>
+    <div class="skills"><h2>Что я умею?</h2><div class="skill-row"><img class="code-img" width="10px" src="https://thumbs.gfycat.com/IdealFantasticBlacklab-size_restricted.gif" alt=""><h3>я умею играть в телефон</h3><p>мне это нравится потому что</p></div>
     <div class="skill-row"><img class="chilli-img" width="50px" src="images/chillies.png" alt="chillies-img"> <h3>я умею бегать</h3><p>мне это нравится потому что я люблю скорость</p></div>
-</div>   
+</div> 
+</div>
+<br>
+<div class="k">
+   <h2>текст который я зачемто написал</h2>
+   <h4>я не знаю зачем он может пригодится</h4> 
+</div>
+
+<div class="p">
+   
+    <div class = "d">
+        <h1>■</h1><h3>я не знаю что писать</h3><h5>серьёзно</h5>
+    </div>
+       
+    <div class = "d">
+        <h1>♦</h1><h3>мне всё ещё нечего писать</h3><h5>да...</h5>
+    </div>
+        
+    <div class = "d">
+        <h1>░</h1><h3>музыкальная пауза</h3><h5>♫♫♫♫♫♫</h5>
+    </div>
+</div>
+<br>  
+<ul class="ul">
+    <li><img class = "img"src="https://get.wallhere.com/photo/animals-anime-horse-grass-lion-wildlife-pasture-foal-meadow-mare-fauna-mammal-vertebrate-close-up-mane-horse-like-mammal-mustang-horse-grazing-188173.jpg" alt=""></li>
+    <li><img class = "img"src="https://avatars.mds.yandex.net/get-zen_doc/1900266/pub_5d278db6998ed600ad4fb29a_5d27909d9ca21400ae07843f/scale_1200" alt=""></li>
+    <li><img class = "img"src="https://www.legendapress.ru/wp-content/uploads/2021/11/%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5.jpg" alt=""></li>
+    <li><img class = "img"src="https://avatars.mds.yandex.net/get-zen_doc/1779726/pub_5e71fb2e7fd03e050f501540_5e71fbfe3a53684f619ce081/scale_1200" alt=""></li>
+    <li><img class = "img"src="https://mnogo-krolikov.ru/wp-content/uploads/2019/10/https-i-ytimg-com-vi-5o-i_jurag4-maxresdefault-j.jpeg" alt=""></li>
+    <li><img class = "img"src="https://cherepah.ru/wp-content/uploads/4/0/8/408fba5bc493217a8461e5186d9989b8.jpeg" alt=""></li>
+    <li><img class = "img"src="https://avatars.mds.yandex.net/get-zen_doc/4782316/pub_602c24fbae93e667d2411539_603b7c5949b4e7289056db5e/scale_1200" alt=""></li>
+    <li><img class = "img"src="https://argumenti.ru/images/arhnews/599606.jpg" alt=""></li>
+</ul>
 <br>
                                                                                                                                                   
     <table>                                                                                                                                                         
